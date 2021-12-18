@@ -1,4 +1,4 @@
-const live2d_path = "https://cdn.jsdelivr.net/gh/yan-930521/datas_for_live2d/";
+const live2d_path = "https://cdn.jsdelivr.net/gh/yan-930521/live2dCDN/autoload.js";
 
 function loadExternalResource(url, type) {
 	return new Promise((resolve, reject) => {
