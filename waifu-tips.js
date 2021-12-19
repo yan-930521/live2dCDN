@@ -14,7 +14,6 @@ function loadWidget(live2d_path, others_path) {
 
 
   // loadModel(live2d_path+"Datas/Tia/index.json");
-  alert(others_path+"方舟指令/l_234600111/model.json")
   loadModel(others_path+"方舟指令/l_234600111/model.json");
   // 檢測用戶狀態
 
