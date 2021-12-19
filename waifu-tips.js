@@ -1,4 +1,4 @@
-function loadWidget(live2d_path) {
+function loadWidget(live2d_path, others_path) {
   localStorage.removeItem("waifu-display");
   sessionStorage.removeItem("waifu-text");
   document.body.insertAdjacentHTML("beforeend", `<div id="waifu">
@@ -13,8 +13,8 @@ function loadWidget(live2d_path) {
   }, 0);
 
 
-  loadModel(live2d_path);
-
+  // loadModel(live2d_path+"Datas/Tia/index.json");
+  loadModel(others_path+"l_234600111/model.json");
   // 檢測用戶狀態
 
   let userAction = false,
@@ -127,9 +127,9 @@ function loadWidget(live2d_path) {
   }
 
   async function loadModel(live2d_path) {
-    loadlive2d("live2d", `${live2d_path}Datas/Tia/index.json`);
+    loadlive2d("live2d", `${live2d_path}`);
   }
 }
-function initWidget(live2d_path) {
-  loadWidget(live2d_path);
+function initWidget(live2d_path, others_path) {
+  loadWidget(live2d_path, others_path);
 }
