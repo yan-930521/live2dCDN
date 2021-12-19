@@ -78,9 +78,9 @@ function loadWidget(live2d_path, others_path) {
     let text;
     if (location.pathname === "/") { // 如果是主页
       const now = new Date().getHours();
-      if (now > 5 && now <= 11) text = "早安呦！";
+      if (now > 5 && now <= 11) text = "早安安呦！";
       else if (now > 11 && now <= 17) text = "午安！ 吃午餐了嗎？";
-      else if (now > 17 && now <= 21) text = "晚安 今天過的怎麼樣呢？";
+      else if (now > 17 && now <= 21) text = "晚安阿，今天過的如何？";
       else if (now > 21 && now <= 23) text = "記得早一點睡喔！";
       else text = "好晚了... 快點去睡覺啦...！";
     }

@@ -3,15 +3,12 @@
 		"selector": "#live2d",
 		"text": ["不可以色色！！！"]
 	}, {
-		"selector": "#waifu-tool .fa-camera-retro",
+		"selector": "#waifu-tool .fa fa-lg fa-camera-retro",
 		"text": ["你想幫我拍照嗎？"]
-	}, {
-		"selector": ".container a[href^='http'], .nav-link .nav-text",
-		"text": ["要去看看 <span>{text}</span> 么？", "去 <span>{text}</span> 逛逛吧。", "到 <span>{text}</span> 看看吧。"]
 	}],
 	"click": [{
 		"selector": "#live2d",
-		"text": ["不要亂碰啦...!"]
+		"text": ["不要亂碰人家啦...!"]
 	}],
 	"seasons": [{
 		"date": "05/21",
