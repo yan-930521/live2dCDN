@@ -3,7 +3,7 @@ function loadWidget(live2d_path, others_path) {
   sessionStorage.removeItem("waifu-text");
   document.body.insertAdjacentHTML("beforeend", `<div id="waifu">
 			<div id="waifu-tips"></div>
-			<canvas id="live2d" width="2000" height="2000"></canvas>
+			<canvas id="live2d" width="800" height="800"></canvas>
 			<div id="waifu-tool">
 				<span class="fa fa-lg fa-camera-retro"></span>
 			</div>
