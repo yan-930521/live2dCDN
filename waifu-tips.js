@@ -14,7 +14,26 @@ function loadWidget(live2d_path, others_path) {
 
 
   // loadModel(live2d_path+"Datas/Tia/index.json");
-  loadModel(others_path+"方舟指令/l_234600111/model.json");
+  let molist = [
+    {
+      name:"狂三",
+      id:"l_234600111"
+    },
+    {
+      name:"折紙",
+      id:"l_234500311"
+    },
+    {
+      name:"琴里",
+      id:"l_234200211"
+    },
+    {
+      name:"四糸乃",
+      id:"l_234100511"
+    },
+  ]
+
+  loadModel(others_path + "方舟指令/"+molist[Math.floor(Math.random()*molist.length)].id+"/model.json");
   // 檢測用戶狀態
 
   let userAction = false,
@@ -71,7 +90,7 @@ function loadWidget(live2d_path, others_path) {
     showMessage(text, 7000, 8);
   })();
 
-  fetch(live2d_path+"waifu-tips.json")
+  fetch(live2d_path + "waifu-tips.json")
     .then(response => response.json())
     .then(result => {
       window.addEventListener("mouseover", event => {
